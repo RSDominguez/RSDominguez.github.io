@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Josefin+Sans&family=Montserrat:wght@300&family=Sofia+Sans+Condensed:wght@200&display=swap" rel="stylesheet"> 
+	<script src="https://kit.fontawesome.com/aef7430fa2.js" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Contacto</title>
+</head>
+<body>
+	<div class="contenedor">
+        <header class="encabezado margen-titulo">
+            <a href="index.html" class="logo"> <img src="img/logo-ciudad1.png" alt="Logo Contacto"></a>
+            <button id="abrir" class="abrir-menu"><i class="fa-solid fa-bars fa-xl"></i></button>
+            <nav class="menubar" id="menubar">
+                <button id="cerrar" class="cerrar-menu"><i class="fa-solid fa-xmark fa-xl"></i></button>
+                <ul class="menulist">
+                    <li><a href="/proyectoturismo-main/main/index.html">Inicio</a></li>
+                    <li><a href="/proyectoturismo-main/main/rionegro.html">Rio Negro</a></li>
+					<li><a href="/proyectoturismo-main/main/mendoza.html">Mendoza</a></li>
+					
+                    <li><a href="#pie">Información</a></li>
+                </ul>
+            </nav> 
+        </header>
+		<main>
+		<form action="" class="formulario" id="formulario">
+			<!-- Grupo: Nombre -->
+			<div class="formulario__grupo" id="grupo__nombre">
+				<label for="nombre" class="formulario__label">Nombre</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="jonathan">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El Nombre de contacto debe tener al menos 4 digitos.</p>
+			</div>
+
+			<!-- Grupo: Nombre -->
+			<div class="formulario__grupo" id="grupo__apellido">
+				<label for="apellido" class="formulario__label">Apellido</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="apellido" id="apellido" placeholder="Jhonson">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El Apellido de contacto dene tener al menos 4 digitos.</p>
+			</div>
+
+			<!-- Grupo: Correo Electronico -->
+			<div class="formulario__grupo" id="grupo__correo">
+				<label for="correo" class="formulario__label">Correo Electrónico</label>
+				<div class="formulario__grupo-input">
+					<input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+			</div>
+
+			<!-- Grupo: Teléfono -->
+			<div class="formulario__grupo" id="grupo__telefono">
+				<label for="telefono" class="formulario__label">Teléfono</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="4491234567">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
+			</div>
+
+			<div>
+				<label for="Mensaje" class="formulario__label">Ingrese su mensaje para al grupo</label>
+				<textarea rows="4" cols="50"></textarea></div><br>
+			<!-- Grupo: Terminos y Condiciones -->
+			<div class="formulario__grupo" id="grupo__terminos">
+				<label class="formulario__label">
+					<input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+					Acepto los Terminos y Condiciones
+				</label>
+			</div><br>			
+			<div class="formulario__grupo" id="grupo__terminos">
+				<label class="formulario__label">
+					<input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+					Deseo recibir novedades por Correo Electronico
+				</label>
+			</div>
+
+			<div class="formulario__mensaje" id="formulario__mensaje">
+				<p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+			</div>
+
+			<div class="formulario__grupo formulario__grupo-btn-enviar">
+				
+				<button type="submit" class="formulario__btn">Enviar</button>
+				<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+			</div>
+			
+		</form>      
+	</div>
+
+	<div>
+	<section class="pie">
+		<footer class="pie margen-titulo">
+			<div class="grupo1">
+				<div class="pie-titulo">
+					<a name="pie"></a>
+					<a href="index.html"> <img src="img/logo-agencia.png" alt="Logo Ciudad"></a>
+				</div>
+						
+				<div class="pie-oficinas-turismo">
+					<br>
+					<h4>Agencia de Aprendizaje a lo largo de la vida</h4>
+					<div class="sede">
+					<p></p><p>Ministerio de Educación | Soledad Acuña</p>
+					</div>
+					<div class="sede">
+					<p></p><p>Subsecretaría de Tecnología Educativa y Sustentabilidad | Santiago Andrés</p>
+					</div>
+					<div class="sede">
+					<p></p><p>Dirección General de Proyectos y Tecnología Educativa | Mario Zalazar</p>
+					</div>
+				</div>
+				<div class="pie-social">
+					<a href="#"><i class="fa-brands fa-square-twitter fa-2xl"></i></a>
+					<a href="#"><i class="fa-brands fa-square-instagram fa-2xl"></i></a>
+					<a href="#"><i class="fa-brands fa-square-facebook fa-2xl"></i></a>
+					<a href="#"><i class="fa-brands fa-pinterest fa-2xl"></i></a>
+				</div> 
+			</div>
+			<div class="grupo2">
+				<small>&copy;2023 <b>Grupo10 Codo a Codo Python FullStack</b> - Todos los derechos reservados</small>				
+			</div>
+		</footer>
+	</section>
+	</div>
+	</main>
+
+	<script src="js/main.js"></script>
+</body>
+</html>

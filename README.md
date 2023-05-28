@@ -1,2 +1,2 @@
 # RSDominguez.github.io
-ProyectoCaC
+Proyecto Codo a Codo Grupo 10
